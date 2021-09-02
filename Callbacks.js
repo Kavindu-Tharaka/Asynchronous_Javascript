@@ -4,7 +4,7 @@ DBCall(3, function (user) {
   // console.log("User", user);  //User { id: 3, name: 'KTM' }
   console.log(`User: ${user}`); //User: [object Object]
 
-  getRepos(user.name, function (repos) {
+  getRepos(user.name, function (repos) {  //leads to callback hell
     console.log("Repos", repos);
   });
 });
